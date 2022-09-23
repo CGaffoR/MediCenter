@@ -76,7 +76,6 @@ header{
 nav ul, 
 nav li {
 
-    display: block;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -475,6 +474,41 @@ footer .sub-banner-desc{
     margin-top: 40px;
 }
 
+.subListNav{
+
+    display: flex;
+
+}
+.subListNav ul{
+
+    position: absolute;
+    left: 0;
+    top: 120px;
+    width: 100%;
+    background-color: #FFF;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+
+}
+.subListNav ul, 
+.subListNav li {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+@media (min-width: 701px){
+
+    .subListNav{
+
+        display: none;
+
+    }
+
+}
+
 @media(max-width: 700px){
 
     .menuMobile{
@@ -550,3 +584,4 @@ footer .sub-banner-desc{
     }
     
 }
+

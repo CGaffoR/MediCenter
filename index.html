@@ -10,23 +10,19 @@
 
     <script type="text/javascript">
 
-        window.onload = function(){
+                function openNav(){
 
-            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".subListNav  ul").style.display ==  'flex'){
 
-                if(document.querySelector(".navigation nav ul").style.display ==  'flex'){
-
-                    document.querySelector(".navigation nav ul").style.display =  'none';
+                    document.querySelector(".subListNav  ul").style.display =  'none';
 
                 } else {
 
-                    document.querySelector(".navigation nav ul").style.display = 'flex';
+                    document.querySelector(".subListNav ul").style.display = 'flex';
 
                 };
 
-            });
-
-        }
+}
 
     </script>
     <title>Medi Center</title>
@@ -45,7 +41,7 @@
 
                 <div class="menuMobile">
 
-                    <a>
+                    <a onclick="openNav()">
 
                         <div class="line"></div>
                         <div class="line"></div>
@@ -67,6 +63,21 @@
                         <li> <a href="">contact</a> </li>
 
                     </ul>
+
+                    <div class="subListNav">
+
+                        <ul>
+
+                            <li class="active"> <a href="">home</a> </li>
+                            <li> <a href="">blog</a> </li>
+                            <li> <a href="">pages</a> </li>
+                            <li> <a href="">departaments</a> </li>
+                            <li> <a href="">gallery</a> </li>
+                            <li> <a href="">contact</a> </li>
+    
+                        </ul>
+
+                    </div>
 
                 </nav>
             
